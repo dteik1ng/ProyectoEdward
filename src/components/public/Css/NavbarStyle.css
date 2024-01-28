@@ -1,0 +1,151 @@
+@import url(variables.css);
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0px 20px 0px;
+  background-color: var(--color1);
+  color: var(--color2);
+  position: relative;
+  border-bottom: 2px solid var(--color2);
+}
+
+.logo-container {
+  flex-shrink: 0;
+}
+
+.logo-page {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-left: 50px;
+}
+
+/* Barra de busqueda */
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  background-color: var(--color2);
+  padding: 10px 30px 10px 40px;
+  border-radius: 50px 50px 50px 50px;
+}
+
+.text {
+  color: var(--color1);
+  font-size: 15px;
+  margin-bottom: 4px;
+  cursor: pointer;
+  position: relative;
+}
+
+.separador {
+  margin-left: 50px;
+  margin-right: 50px;
+  color: var(--color1);
+}
+
+input {
+  padding: 8px;
+  border: none;
+  font-size: 15px;
+  background: transparent;
+  color: var(--color1);
+  outline: none;
+}
+
+.search-icon {
+  cursor: pointer;
+  color: var(--color1);
+}
+
+/* Menu de categorias de la barra de busquda */
+
+.dropdown-menu {
+  position: absolute;
+  top: 200%;
+  right: 27%;
+  background-color: var(--color2);
+  padding: 20px 58px;
+  border-radius: 0px 0px 10px 10px;
+}
+
+.menu-categories{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.menu-categories li{
+  margin-bottom: 20px;
+}
+
+.menu-categories li a {
+  text-decoration: none;
+  color: var(--color1);
+  transition: color 0.3s;
+}
+
+.menu-categories li a:hover {
+  color: var(--color2);
+}
+
+
+/* Menu de usuario con icono y logo */
+
+.menu {
+  border: solid 2px var(--color2);
+  border-radius: 50px 50px 50px 50px;
+  margin-right: 45px;
+}
+
+.icon-menu {
+  font-size: 30px;
+  cursor: pointer;
+  margin: 10px 10px 6px 10px;
+}
+
+.user-logo {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin: 0px 10px 5px 10px;
+}
+
+.menu-user {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.menu-user li {
+  margin-bottom: 20px;
+}
+
+.menu-user li a {
+  text-decoration: none;
+  color: var(--color2);
+  transition: color 0.3s;
+  font-size: 14px;
+  padding: 15px 110px;
+  transition: all 0.3s;
+}
+
+.menu-user li a:hover {
+  color: var(--color1);
+  background-color: var(--color2);
+  border-radius: 50px 50px 50px 50px;
+}
+
+.dropdown-menu-second {
+  position: absolute;
+  top: 90%;
+  right: 3%;
+  background-color: var(--color1);
+  padding: 20px 40px 0px 40px;
+  border-radius: 30px;
+  border: 2px solid var(--color2);
+}

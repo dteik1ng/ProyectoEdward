@@ -1,0 +1,63 @@
+@import url(./CardsStyle.css);
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 93%;
+  padding: 30px 55px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 60px;
+}
+
+.card{
+  margin: 0px 0px 3%;
+}
+
+.image {
+  height: 200px;
+  width: 100%;
+  border-radius: 20px;
+}
+
+.body {
+  padding-bottom: 10px;
+  border-bottom: solid 2px var(--color2);
+}
+
+.foot {
+  margin-top: 10px;
+}
+
+.propietario {
+  font-weight: bold;
+}
+
+.button-container {
+  position: absolute;
+  display: flex;
+  margin: -42px 12%;
+}
+
+.button {
+  background-color: var(--color2);
+  border: none;
+  cursor: pointer;
+  color: var(--color1);
+  transition: color 0.3s;
+  padding: 12px 60px;
+  transition: all 0.4s;
+  border-radius: 50px 50px 50px 50px;
+}
+
+.button:hover {
+  background-color: var(--color1);
+  color: var(--color2);
+  border: 1px solid var(--color2);
+}
